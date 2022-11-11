@@ -198,7 +198,10 @@ nav ul li a:hover::after {
 
 
 .btn:hover{
-  border: 2px solid red;
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5); /*in rgba, a stands for alpha, which defines the opacity as a number btwin 0 and 1 */
+  
 }
 
 .skills-list div:hover{
