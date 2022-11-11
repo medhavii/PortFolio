@@ -1,79 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortFolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="Images/me1.png" alt="logo">
-                <!-- <img src="Images/logo.png" alt="logo"> -->
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <!-- <p>Student</p> -->
-                <h1>Hey there,<br> I'm <span>Medhavi Mehta</span></h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="Images/me1.png" alt="logo" />
+          <!-- <img src="Images/logo.png" alt="logo"> -->
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <!-- <p>Student</p> -->
+          <h1>
+            Hey there,<br />
+            I'm <span>Medhavi Mehta</span>
+          </h1>
         </div>
+      </div>
     </div>
     <!-- about -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/me2.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">
-                        About Me
-                    </h1>
-                    <br>
-                    <p>Aspiring for a challenging career that paves way to get in touch with the latest trends in the field. Seeking for an entry-level opportunity where I can enhance my skills and could learn many more things to attain a position of excellence and to be a good professional. Want to become someone who is able to assist and selflessly able to contribute for growth of the organization and society </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('workshops')">Conferences and Workshops
-                        </p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="workshops">
-                        <ul>
-                            <li><span>Hacktoberfest Meetup</span><br>Organised by:GitHub SRM<br>Oct 2022</li>
-                            <li><span>Azure Data Day</span><br>Organised by:Azure Developer Community<br>Sept 2022</li>
-                            <li><span>De-Code</span><br>Organised by:Blockchain Club SRM<br>Sept 2022</li>
-                            <li><span>AI for India Event</span><br>Organised by:GUVI<br>Apr 2021</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Technical Content Writer</span><br>TechFabs<br>Nov 2021 - Jan 2022</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>SRM Institute of Science and Technology - Kattankulathur</span><br>B.Tech in with specialization in Cyber
-                                Security<br>June 2024</li>
-                            <li><span>Bharatiya Vidya Bhavan's V.M Public School </span><br>CLASS XII<br>March 2020</li>
-                            <li><span>Army Public School- Bhuj</span><br>CLASS X<br>March 2018</li>
-                           
-                        </ul>
-                    </div>
-
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/me2.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p>
+              Aspiring for a challenging career that paves way to get in touch
+              with the latest trends in the field. Seeking for an entry-level
+              opportunity where I can enhance my skills and could learn many
+              more things to attain a position of excellence and to be a good
+              professional. Want to become someone who is able to assist and
+              selflessly able to contribute for growth of the organization and
+              society
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('workshops')">
+                Conferences and Workshops
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="workshops">
+              <ul>
+                <li>
+                  <span>Hacktoberfest Meetup</span><br />Organised by:GitHub
+                  SRM<br />Oct 2022
+                </li>
+                <li>
+                  <span>Azure Data Day</span><br />Organised by:Azure Developer
+                  Community<br />Sept 2022
+                </li>
+                <li>
+                  <span>De-Code</span><br />Organised by:Blockchain Club SRM<br />Sept
+                  2022
+                </li>
+                <li>
+                  <span>AI for India Event</span><br />Organised by:GUVI<br />Apr
+                  2021
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Technical Content Writer</span><br />TechFabs<br />Nov
+                  2021 - Jan 2022
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >SRM Institute of Science and Technology -
+                    Kattankulathur</span
+                  ><br />B.Tech in with specialization in Cyber Security<br />June
+                  2024
+                </li>
+                <li>
+                  <span>Bharatiya Vidya Bhavan's V.M Public School </span
+                  ><br />CLASS XII<br />March 2020
+                </li>
+                <li>
+                  <span>Army Public School- Bhuj</span><br />CLASS X<br />March
+                  2018
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-<script src="script.js"></script>  
-</body>
+
+    <!-- SERVICES -->
+    <div id="skills">
+      <div class="containers">
+        <h1 class="sub-title">Skills</h1>
+        <div class="skills-list">
+          <div> <img src="Images/html.png" alt="">
+         <a href="">HTML</a></div>
+          <div><img src="Images/css.png" alt="">
+            <a href="">CSS</a></div>
+          <div><img src="Images/javascript.png" alt=""> 
+            <a href="">JS</a></div>
+        </div>
+        <div class="skills-list">
+            <div> <img src="Images/c.png" alt="">
+           <a href="https://drive.google.com/file/d/10q5nezCATY8gNJ-cU7gjHq2Ev0EH7YtN/view?usp=share_link">C</a></div>
+            <div><img src="Images/c++-removebg-preview.png" alt="">
+              <a href="" alt="not available">C++</a></div>
+            <div><img src="Images/python.png" alt=""> 
+              <a href="https://drive.google.com/file/d/10hL8YgsGh_c7gPNc49nnVsKNsmb7xEBS/view?usp=share_link" target="_blank" class="btn">Python</a></div>
+          </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
