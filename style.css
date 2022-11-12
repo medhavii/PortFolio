@@ -25,9 +25,10 @@ body {
   /* opacity: 0.3; */
 }
 
-.container {
+.container{
   padding: 10px 10%;
 }
+
 
 nav {
   display: flex;
@@ -163,7 +164,6 @@ nav ul li a:hover::after {
 
 #skills {
   padding: 30px 30px;
-  
 }
 
 .skills-list {
@@ -174,38 +174,126 @@ nav ul li a:hover::after {
   text-align: center;
 }
 
-.skills-list h2{
-    margin-top: 10px;
+.skills-list h2 {
+  margin-top: 10px;
 }
 
-.skills-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 30px;
-    font-weight: 500;
-    border-right: 10px;
-    transition: background 0.5s, transform 0.5s;
+.skills-list div {
+  display: flex;
+  flex-direction: column;
+  background: #262626;
+  padding: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  border-right: 10px;
+  transition: background 0.5s, transform 0.5s;
+  align-items: center;
+  border-radius: 20px;
 }
 
-.skills-list div a{
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    font-weight: 500;
-    margin-top: 20px;
-    display: inline-block;
+.skills-list div a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+  display: inline-block;
 }
 
-
-.btn:hover{
-  cursor: pointer;
-  background: transparent;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5); /*in rgba, a stands for alpha, which defines the opacity as a number btwin 0 and 1 */
+.skills-list img{
+  width: 70%;
   
 }
 
-.skills-list div:hover{
-    /* background: #ff004f; */
-    transform: translateY(-10px );
+.btn:hover {
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5); /*in rgba, a stands for alpha, which defines the opacity as a number btwin 0 and 1 */
+}
 
+.skills-list div:hover {
+  /* background: #ff004f; */
+  transform: translateY(-10px);
+}
+
+
+
+/* my work */
+
+#myWork{
+  padding: 50px 0;
+}
+
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  justify-content: center;
+
+}
+
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+
+}
+
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  overflow: hidden;
+  font-size: 14px;
+  transition: height 0.5s;
+
+}
+
+
+.layer h3{
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+.layer a{
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background-color: white;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+
+}
+
+.work:hover img{
+
+  transform: scale(1.1) ;
+
+}
+
+.work:hover .layer{
+  height: 100%;
 }
