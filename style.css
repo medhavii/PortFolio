@@ -9,6 +9,10 @@ body {
   background: #080808;
   color: white;
 }
+html{
+  scroll-behavior: smooth;
+}
+
 
 #header {
   width: 100%;
@@ -388,6 +392,8 @@ form btn2{
   cursor: pointer;
 }
 
+/* footer */
+
 .copyright{
   width: 100%;
   text-align: center;
@@ -396,4 +402,10 @@ form btn2{
   font-weight: 300;
   margin-top: 20px;
   bottom: 0;
+}
+
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }

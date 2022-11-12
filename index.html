@@ -15,15 +15,15 @@
         <nav>
           <img src="Images/me1.png" alt="logo" />
           <!-- <img src="Images/logo.png" alt="logo"> -->
-          <ul>
+          <ul id="sideMenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#myWork">Work</a></li>
             <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="header-text">
           <!-- <p>Student</p> -->
@@ -183,7 +183,7 @@
             <div class="layer">
               <h3>Quick Quiz</h3>
               <p>Check this out</p>
-              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/medhavii/quickQuiz.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="work">
@@ -191,7 +191,7 @@
             <div class="layer">
               <h3>Chrome Extension</h3>
               <p>A chrome extension which lets you save the links and use it later</p>
-              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/medhavii/chromeExtension.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           </div>
           <div class="work">
@@ -199,7 +199,7 @@
             <div class="layer">
             <h3>Website</h3>
               <p>Check this out</p>
-              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://medhavii.github.io/Project01/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
       </div>
@@ -214,24 +214,26 @@
             <p><i class="fa-solid fa-envelope"></i>medhavimehta118@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>9429510929</p>
             <div class="social-icons">
-              <a href="https://github.com/medhavii"><i class="fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/medhavi-mehta-1284271b5/"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://twitter.com/medhavi_mehta"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="https://github.com/medhavii" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/medhavi-mehta-1284271b5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://twitter.com/medhavi_mehta" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="https://medium.com/@medhavimehta118" target="_blank"><i class="fa-brands fa-medium"></i></a>
             </div>
             <a href="https://drive.google.com/file/d/1W_jCo4adY8WORcb2VlBRTOdbP-wTCAbU/view?usp=share_link" target="_blank" class="btn btn2">RESUME</a>
           </div>
           <div class="contact-right">
-            <form action="">
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required>
               <input type="email" name="Email" placeholder="Your Email" required>
               <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
               <button type="Submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
-      
     </div>
+
     <div class="copyright">
       <p>Copyright <i class="fa-regular fa-copyright"></i> Medhavi.</p>
       
